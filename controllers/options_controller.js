@@ -2,6 +2,8 @@ const menu1 = document.querySelector('[data-first-kind]');
 const menu2 = document.querySelector('[data-second-kind]');
 const titulo = document.querySelector('[data-titulo]');
 const botones = document.querySelectorAll('[data-btn]');
+const input1 = document.querySelector('[data-money]');
+const input2 = document.querySelector('[data-result]');
 
 const opciones = {
   moneda: [
@@ -60,5 +62,7 @@ botones.forEach((boton) => {
     actualizarOpciones(conversion);
     cambiarBackground(conversion);
     cambiarColorBotones(conversion);
+    input1.value = "";
+    input2.value = "";
   });
 });
