@@ -1,5 +1,5 @@
 import { Conversor } from "../conversor.js";
-import { Hora } from "./tiempos/Hora.js";
+import { Hora } from "./tiempos/hora.js";
 import { Minuto } from "./tiempos/minuto.js";
 import { Segundo } from "./tiempos/segundo.js";
 import { Milisegundo } from "./tiempos/milisegundo.js";
