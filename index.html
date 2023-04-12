@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+    <title>Conversor</title>
+</head>
+<body>
+    <div class="encabezado">
+        <div class="buttons-container">
+            <button class="btn" data-btn>Moneda</button>
+            <button class="btn" data-btn>Temperatura</button>
+            <button class="btn" data-btn>Distancia</button>
+            <button class="btn" data-btn>Tiempo</button>
+        </div>
+        <h1 class="titulo" data-titulo>Conversor de monedas</h1>
+    </div>
+    <section class="conversor-container">
+        <div class="conversor">
+            <form>
+                <select class="menu" name="moneda1" data-first-kind>
+                    <option value="pesos">Pesos Mexicanos</option>
+                    <option value="dolares">Dolares</option>
+                    <option value="euros">Euros</option>
+                    <option value="libras">Libras Esterlinas</option>
+                    <option value="yen">Yen Japonés</option>
+                    <option value="won">Won sul-coreano</option>
+                </select>
+                <p class="input-message-error"></p>
+                <input class="input" type="number" name="valor" placeholder="Valor a convertir" data-money>
+                <select class="menu" name="moneda2" data-second-kind>
+                    <option value="pesos">Pesos Mexicanos</option>
+                    <option value="dolares">Dolares</option>
+                    <option value="euros">Euros</option>
+                    <option value="libras">Libras Esterlinas</option>
+                    <option value="yen">Yen Japonés</option>
+                    <option value="won">Won sul-coreano</option>
+                </select>
+                    <input class="input" type="number" name="valor" placeholder="Valor Convertido" data-result readonly>
+            </form>
+        </div>
+    </section>
+</body>
+<script type="module" src="services/conversor_service.js"></script>
+<script  src="./controllers/options_controller.js"></script>
+</html>
