@@ -24,6 +24,10 @@ const opciones = {
     { valor: 'metros', texto: 'Metros' },
     { valor: 'centimetros', texto: 'Centimetros' },
     { valor: 'milimetros', texto: 'Milímetros' },
+    { valor: 'millas', texto: 'Millas' },
+    { valor: 'yardas', texto: 'Yardas' },
+    { valor: 'pies', texto: 'Pies' },
+    { valor: 'pulgadas', texto: 'Pulgadas' },
   ],
   tiempo: [
     { valor: 'horas', texto: 'Horas' },

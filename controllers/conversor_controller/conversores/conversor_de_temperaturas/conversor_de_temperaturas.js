@@ -22,13 +22,11 @@ export class ConversorDeTemperaturas extends Conversor {
         return super.convertirA(destino, this.temperaturas);
     }
     ejecucion() {
-        console.log(this.valor);
         this.valor = this.convertirAComun(this.nombre);
-        console.log(this.valor);
         if (this.destino == "centigrados") {
-            return this.valor;
+            return parseFloat(this.valor).toFixed(2);
         } else {
-        return super.ejecucion(this.temperaturas);
+            return super.ejecucion(this.temperaturas).toFixed(2);
         }
     }
 }

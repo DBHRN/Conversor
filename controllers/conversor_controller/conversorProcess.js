@@ -17,7 +17,6 @@ export class ConversorProcess {
     elegirConversor(conversores) {
         
         for (let conversor of conversores) {
-            console.log(conversores);
             if (conversor.nombres.includes(this.nombre)) {
                 return conversor;
             }

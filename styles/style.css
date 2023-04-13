@@ -138,6 +138,7 @@ form {
 .input-error {
     border: 1px solid rgb(168, 10, 10);
 }
+
 @media screen and (max-width: 768px) {
     .titulo {
         top:300px;

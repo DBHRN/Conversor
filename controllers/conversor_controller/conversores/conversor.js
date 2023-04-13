@@ -20,9 +20,7 @@ export class Conversor {
     }
     ejecucion(medidas) {
         this.medidas = medidas;
-        console.log(this.medidas);
         this.valor = this.convertirA(this.destino, this.medidas);
-        console.log(this.valor);
         return this.valor;
-    }
+    }   
 }

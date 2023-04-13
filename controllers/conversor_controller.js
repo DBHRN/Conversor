@@ -16,7 +16,6 @@ export class ConversorController {
         let input = this.conversorView.input.value;
         let inputBox = this.conversorView.input;
         validarInput(inputBox);
-        this.conversorView.input.value = input;
         let firstSelect = this.conversorView.firstSelect.value;
         let secondSelect = this.conversorView.secondSelect.value;
         let resultado = this.conversorView.resultado;
